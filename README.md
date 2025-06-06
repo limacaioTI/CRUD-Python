@@ -1,26 +1,77 @@
-# Gerenciador de Tarefas (CRUD Python)
+# Gerenciador de Tarefas (CRUD Python + Next.js)
 
-Este é um sistema simples de gerenciamento de tarefas (Todo List) que demonstra as operações básicas de CRUD (Create, Read, Update, Delete) usando Python e SQLite.
+Este é um sistema de gerenciamento de tarefas completo com backend em Python (FastAPI) e frontend em Next.js.
+
+## Estrutura do Projeto
+
+- `backend/`: API REST em Python com FastAPI
+- `frontend/`: Interface do usuário em Next.js com Tailwind CSS
+
+## Como Executar
+
+### Backend
+
+1. Entre no diretório do backend:
+   ```bash
+   cd backend
+   ```
+
+2. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Inicie o servidor:
+   ```bash
+   uvicorn app.main:app --reload
+   ```
+
+O backend estará rodando em `http://localhost:8000`
+
+### Frontend
+
+1. Em outro terminal, entre no diretório do frontend:
+   ```bash
+   cd frontend
+   ```
+
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+O frontend estará rodando em `http://localhost:3000`
 
 ## Funcionalidades
 
 - Criar novas tarefas
 - Listar todas as tarefas
-- Atualizar o status das tarefas
+- Atualizar o status e informações das tarefas
 - Deletar tarefas
+- Interface moderna e responsiva
+- Validação de dados
+- Feedback visual das ações
 
-## Como usar
+## Tecnologias Utilizadas
 
-1. Certifique-se de ter Python instalado no seu computador
-2. Clone este repositório ou baixe os arquivos
-3. Instale as dependências:
-   ```
-   pip install -r requirements.txt
-   ```
-4. Execute o programa:
-   ```
-   python app.py
-   ```
+### Backend
+- Python
+- FastAPI
+- SQLAlchemy
+- SQLite
+- Pydantic
+
+### Frontend
+- Next.js 13
+- TypeScript
+- Tailwind CSS
+- React Hooks
+- Fetch API
 
 ## Estrutura do Banco de Dados
 
